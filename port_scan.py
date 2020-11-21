@@ -1,14 +1,14 @@
 from socket import *
 
 import os
+from colorama import init
 
-
-from colorama import Fore, Back, Style, init 
-init(autoreset=True) 
+def banner():
 
 os.system("clear")
+init()
+print(colored("""
 
-banner = """
 
 ========================================================
 
@@ -26,13 +26,13 @@ banner = """
 
 =========================================================
 
-=SCAN V1.0 
 
-=CREATED BY MARS
 
-"""
+""","red"))
+print(colored("""=SCAN V1.0""","blue"))
+print(colored("""Created By Mars""","green"))
 
-print (Fore.RED + banner)
+
 
 
 
